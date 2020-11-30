@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.season{
+    width:500px;
+    margin:0 auto;
+    position: relative;
+}
+[class^="season__"]{
+    width:150px;
+    height: 150px;
+    position:absolute;
+
+}
+[class^="season__"]:hover{
+  z-index: 4;
+
+}
+.season__summer{
+    background-color:green;
+    top: 10px;
+    left: 0;
+}
+.season__winter{
+    background-color: blue ;  
+    top: 30px;
+    left: 30px;
+}
+.season__spring{
+    background-color: red;  
+    top: 50px;
+    left: 50px;
+}
+.season__summer::before{
+    content:"Reactjs";
+    width:100px;
+    height: 100px;
+    top: 0;
+    left: 100px;
+    display: block;
+    background-color:yellow;
+}
+p::before{
+    content:"Lop hoc ";
+}
+P::after{
+    content:" 2010E";
+}
+p::first-letter{
+    color: red;
+    font-size: 100px;
+}

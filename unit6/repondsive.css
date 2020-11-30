@@ -1,0 +1,18 @@
+@media only screen and (min-width:800px){
+    .row .col{
+        width:calc((1/3)* 100%);   
+    }
+}
+@media only screen and (min-width:400px) and (max-width:799px){
+    .row .col{
+        width:50%;   
+    }
+    .col:nth-child(2){
+        display:none;
+    }
+}
+@media only screen and (max-width:399px){
+    .row .col{
+        width:100%;   
+    }
+}
